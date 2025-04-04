@@ -1,4 +1,20 @@
 import streamlit as st
+import streamlit as st
+import os
+import sys
+
+# Print Python version for debugging
+print(f"Python version: {sys.version}")
+print(f"Working directory: {os.getcwd()}")
+
+# Configure page properties
+st.set_page_config(
+    page_title="ML Workflow Platform",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
